@@ -1,4 +1,4 @@
-# Unity-Target-Position-Prediction
+# Ext_Vector3
 An extension method which can be used to approximate the position a projectile must be aimed at in order to hit a given target at a given velocity.
 
 HOW TO USE:
@@ -23,3 +23,22 @@ NOTES:
     Even with 2 iterations the result is fairly accurate;
     
     The result of this method will never return the exact position or direction but rather a very accurate approximation.
+
+# Ext_Physics
+An extension method which can be used to shoot a curved raycast given a start position, direction and gravity.
+
+HOW TO USE:
+
+    // Works almost the same as a regular RayCast (Since it's just a number of RayCasts)
+    bool output;
+    RayCastHit curvedHit;
+    int smoothness; // Defines how smooth/curved the CurveCast will be
+    // Create a Vector3 List, this will be used to store the points along the curved RayCast; You can use this to map a LineRenderer to        the points in order to visualize the CurveCast;
+    List<Vector3> curvePoints;
+    output = CurveCast(origin, direction, gravityDirection, smoothness, RaycastHit hitInfo, maxDistance, List<Vector3> points);
+    
+NOTES:
+
+    Currently does not support Layers, though if you want they are easy to add since regular RayCasts are used internally.
+    Can be overloaded to exclude the List output in case you want to improve performance and don't need to visualize the CurveCast.
+    
