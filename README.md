@@ -22,4 +22,4 @@ NOTES:
     However through testing I found that even at velocities up to 200m/s 5 iterations are way more than sufficient.
     Even with 2 iterations the result is fairly accurate;
     
-    The result of this method will *never* return the *exact* position or direction but rather a very accurate approximation.
+    The result of this method will never return the exact position or direction but rather a very accurate approximation.
