@@ -33,7 +33,7 @@ HOW TO USE:
     bool output;
     RayCastHit curvedHit;
     int smoothness; // Defines how smooth/curved the CurveCast will be
-    // Create a Vector3 List, this will be used to store the points along the curved RayCast; You can use this to map a LineRenderer to        the points in order to visualize the CurveCast;
+    // Create a Vector3 List, this will be used to store the points along the curved RayCast; You can use this to map a LineRenderer to the points in order to visualize the CurveCast;
     List<Vector3> curvePoints;
     output = CurveCast(origin, direction, gravityDirection, smoothness, RaycastHit hitInfo, maxDistance, List<Vector3> points);
     
