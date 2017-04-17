@@ -1,5 +1,5 @@
 # Ext_Vector3
-An extension method which can be used to approximate the position a projectile must be aimed at in order to hit a given target at a given velocity.
+A method which can be used to approximate the position a projectile must be aimed at in order to hit a given target at a given velocity.
 
 HOW TO USE:
 
@@ -25,7 +25,7 @@ NOTES:
     The result of this method will never return the exact position or direction but rather a very accurate approximation.
 
 # Ext_Physics
-An extension method which can be used to shoot a curved raycast given a start position, direction and gravity.
+A method which can be used to shoot a curved raycast given a start position, direction and gravity.
 
 HOW TO USE:
 
